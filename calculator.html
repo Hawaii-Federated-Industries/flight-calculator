@@ -52,8 +52,8 @@
         
         let voluntary = emissions / 1000 * 51;
         $("#voluntary").text(
-            (voluntary).toLocaleString(undefined, {maximumFractionDigits: 0})
-            + " offset based on Obama social cost of carbon at $51 per ton");
+            "$" + (voluntary).toLocaleString(undefined, {maximumFractionDigits: 0})
+            + " voluntary offset based on Obama social cost of carbon at $51 per ton");
 
         const vegReductionPerYear = 540.0; // kilograms
         let veg = emissions / vegReductionPerYear;
