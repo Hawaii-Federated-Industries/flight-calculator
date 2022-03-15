@@ -50,7 +50,7 @@
             (emissions / 1000).toLocaleString(undefined, {maximumFractionDigits: 1})
             + " metric tons CO2 equivalent");
         
-        let offset = emissions * 51;
+        let voluntary = emissions * 51;
         $("#voluntary").text(
             (voluntary).toLocaleString(undefined, {maximumFractionDigits: 0})
             + " offset based on Obama social cost of carbon at $51 per ton");
