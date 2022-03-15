@@ -49,6 +49,11 @@
         $("#emissions").text(
             (emissions / 1000).toLocaleString(undefined, {maximumFractionDigits: 1})
             + " metric tons CO2 equivalent");
+        
+        let offset = emissions * 51;
+        $("#voluntary").text(
+            (voluntary).toLocaleString(undefined, {maximumFractionDigits: 0})
+            + " offset based on Obama social cost of carbon at $51 per ton");
 
         const vegReductionPerYear = 540.0; // kilograms
         let veg = emissions / vegReductionPerYear;
@@ -213,5 +218,6 @@
     <ul>
         <li>Distance (each way): <span id="distance">N/A</span></li>
         <li>Round-trip emissions per passenger: <span id="emissions">N/A</span></li>
+        <li>Voluntary offset: <span id="voluntary">N/A</span></li>
     </ul>
 </div>
